@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Sasuuu ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(to bottom,#ffb6d9,#ffd6e8);
+text-align:center;
+overflow-x:hidden;
+}
+
+.hero{
+padding:100px 20px;
+color:white;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero p{
+font-size:1.4rem;
+}
+
+.gallery{
+padding:40px;
+}
+
+.polaroid{
+display:inline-block;
+background:white;
+padding:15px;
+margin:15px;
+width:220px;
+box-shadow:0 0 15px rgba(0,0,0,.2);
+border-radius:15px;
+transform:rotate(-3deg);
+}
+
+.polaroid img{
+width:100%;
+border-radius:10px;
+}
+
+.card{
+background:white;
+margin:15px auto;
+padding:20px;
+max-width:500px;
+border-radius:20px;
+box-shadow:0 0 10px pink;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#ff4f8b;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+#secret{
+font-size:22px;
+margin-top:20px;
+color:#d6005c;
+font-weight:bold;
+}
+
+.heart{
+position:fixed;
+top:-50px;
+font-size:25px;
+animation:fall linear infinite;
+pointer-events:none;
+}
+
+@keyframes fall{
+to{
+transform:translateY(120vh);
+}
+}
+
+footer{
+padding:60px 20px;
+color:#fff;
+font-size:22px;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>❤️ Sasuuu ❤️</h1>
+
+<p>
+Saseeee you are my bestestt thing possible in the world 💖
+</p>
+
+</section>
+
+<h2>📸 Our Memories</h2>
+
+<div class="gallery">
+
+<div class="polaroid">
+<img src="Love Website/photo1.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo2.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo3.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo4.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo5.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo6.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo7.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo8.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo9.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo10.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo11.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo12.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo13.jpg.jpeg">
+</div>
+
+<div class="polaroid">
+<img src="Love Website/photo14.jpg.jpeg">
+</div>
+
+</div>
+
+<h2>🌹 Reasons I Love You</h2>
+
+<div class="card">💖 Your smile</div>
+<div class="card">💖 Your cute nature</div>
+<div class="card">💖 The way you care</div>
+<div class="card">💖 Every memory with you</div>
+
+<h2>💌 Secret Messages</h2>
+
+<button onclick="showLove()">Click Me ❤️</button>
+
+<p id="secret"></p>
+
+<footer>
+
+❤️ Forever My Favorite Person ❤️
+
+</footer>
+
+<script>
+
+function showLove(){
+
+document.getElementById("secret").innerHTML=
+"Sasuuu, thank you for making life more beautiful. ❤️";
+
+}
+
+for(let i=0;i<80;i++){
+
+const heart=document.createElement("div");
+
+heart.innerHTML="❤️";
+
+heart.classList.add("heart");
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(Math.random()*5+4)+"s";
+
+document.body.appendChild(heart);
+
+}
+
+document.addEventListener("mousemove",(e)=>{
+
+const spark=document.createElement("div");
+
+spark.innerHTML="✨";
+
+spark.style.position="fixed";
+
+spark.style.left=e.clientX+"px";
+
+spark.style.top=e.clientY+"px";
+
+spark.style.pointerEvents="none";
+
+document.body.appendChild(spark);
+
+setTimeout(()=>{
+spark.remove();
+},500);
+
+});
+
+</script>
+
+</body>
+</html>
